@@ -12,11 +12,9 @@ import { Estado } from 'src/app/model/estado';
 })
 export class CidadeFormComponent implements OnInit {
 
-  cidade: Cidade;
-
-  estados: Array<Estado>;
-
-  estado: Estado;
+  cidade: Cidade = new Cidade;
+  estados?: Array<Estado>;
+  estado?: Estado;
 
   constructor(
     private route: ActivatedRoute,
@@ -26,7 +24,6 @@ export class CidadeFormComponent implements OnInit {
 
   ngOnInit(): void {
     this.cidade = new Cidade();
-    
     this.listarEstados();
   }
 

@@ -11,13 +11,13 @@ import { Cidade } from 'src/app/model/cidade';
 })
 export class EstadoListComponent implements OnInit {
 
-  estados: Array<any>;
-  estadosComboBox: Array<any>;
+  estados?: Array<any>;
+  estadosComboBox?: Array<any>;
   estado: any = {
     id: 2
   };
 
-  cidades: Array<any>;
+  cidades?: Array<any>;
 
   constructor(
     private estadoService: EstadoService,

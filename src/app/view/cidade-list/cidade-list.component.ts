@@ -8,7 +8,7 @@ import { CidadeService } from 'src/app/services/cidade.service';
 })
 export class CidadeListComponent implements OnInit {
 
-  cidades: Array<any>;
+  cidades?: Array<any>;
 
   constructor(private cidadeService: CidadeService) { }
 

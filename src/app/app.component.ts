@@ -1,7 +1,7 @@
 import { Component, AfterViewChecked } from '@angular/core';
 
 import 'bootstrap';
-import * as $ from 'jquery';
+declare var $: any;
 
 @Component({
   selector: 'app-root',
@@ -12,8 +12,8 @@ export class AppComponent implements AfterViewChecked {
   title = 'Simulação de emprestimo';
 
   ngAfterViewChecked() {
-    $('[data-toggle="tooltip"]').tooltip({ container: 'body' });
-    $("#myModal").modal('show');
+    //$('[data-toggle="tooltip"]').tooltip({ container: 'body' });
+    //$("#myModal").modal('show');
  }
 
 }

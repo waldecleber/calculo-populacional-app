@@ -3,9 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: true,
-  API: 'https://calculo-populacional-ms.herokuapp.com/',
-  BASE_URL: '/'
+  production: false,
+  API: 'http://localhost:7001',
+  BASE_URL: '/api'
 };
 
 /*

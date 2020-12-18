@@ -12,8 +12,8 @@ export class AppComponent implements AfterViewChecked {
   title = 'Simulação de emprestimo';
 
   ngAfterViewChecked() {
-    //$('[data-toggle="tooltip"]').tooltip({ container: 'body' });
-    //$("#myModal").modal('show');
+    $('[data-toggle="tooltip"]').tooltip({ container: 'body' });
+    $("#myModal").modal('show');
  }
 
 }
